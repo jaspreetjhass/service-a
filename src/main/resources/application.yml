@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: service-A
+server:
+  port: 8080
+  
+service-b:
+  base-url: http://localhost:8081/serviceB
+  request-url: ${service-b.base-url}/processRequest
